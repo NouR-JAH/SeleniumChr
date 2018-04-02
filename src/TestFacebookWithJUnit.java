@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestFacebookWithJUnit {
 
@@ -13,8 +13,8 @@ public class TestFacebookWithJUnit {
 	@Before
 	public void setUp() throws Exception {
 		
-		System.setProperty("webdriver.gecko.driver" , "C:\\Users\\Admin\\Desktop\\New folder (2)\\Uni - Spring Semester of 2018\\Software\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver" , "C:\\Users\\Admin\\workspace\\Selenium Chrome\\exefiles\\chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 	
 	@After
